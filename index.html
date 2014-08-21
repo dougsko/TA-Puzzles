@@ -76,7 +76,12 @@ src="https://gist.github.com/dougsko/6910d881d2c163c4ebb5.js"></script>
 		So n! is REALLY big.</blockquote>
 	<br/>
 
-	<p>To solve this question, we will use a divide by 5^n trick.</p>
+	<p>To solve this question, we will use a divide by 5^n trick.
+	We continually divide n by powers of 5.  At each division, we keep a
+	running total of the integer value of the quotient.  When the
+	quotient is less than 1, we stop and the current cumulative sum
+	equals the number of trailing zeros for any n!.</p>
+
 	<script
 src="https://gist.github.com/dougsko/65dd50487feb36f902cd.js"></script>
 
@@ -105,7 +110,7 @@ src="https://gist.github.com/dougsko/65dd50487feb36f902cd.js"></script>
 	<code>hashCode()</code> method.  The purpose of this method is to
 provide a unique integer value for any object.  However, these integer
 values are meant to be dstributed evenly across a domain and have
-nothing to do with the even or oddness of a value.</p>
+nothing to do with the even or oddness of the object.</p>
 
 
 
