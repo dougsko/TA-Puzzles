@@ -71,6 +71,30 @@ $ java FastPowers <number>
 	<script
 src="https://gist.github.com/dougsko/6910d881d2c163c4ebb5.js"></script>
 
+	<h3>Lot's of 0's</h3>
+	<blockquote>How many zeros are on the end of n! ?  Assume n is big.
+		So n! is REALLY big.</blockquote>
+
+	<h3>What's Wrong With...</h3>
+	<blockquote>...this code?</blockquote>
+<pre><code>public static String parity(String msg)
+{
+	String parityStr = null;
+	int n = msg.hashCode();
+	switch(n % 2)
+	{
+	case 0:
+		parityStr = "even";
+		break;
+	case 1:
+		parityStr = "odd";
+		break;
+	}
+	return parityStr;
+}
+</code></pre>
+
+
 
 
 
