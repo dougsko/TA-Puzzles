@@ -47,6 +47,23 @@
 	<h3>Fast Powers Test</h3>
 	<blockquote>What is the fastest way to test if an int is a power of
 		two?</blockquote>
+	<p>The trick to this question is to use a property found when using
+	binary representation of numbers.  If a number is a power of two,
+	then in binary, it will be represented as a 1, followed by some
+	number of zeros.  If you subtract one from a power of two, then its
+	binary representation will be all 1's. If you perform a bitwise AND
+	operation of n and n-1, and n is a power of two, then the answer
+	will always be zero.  The one special edge case is if n itself is
+	zero, in which case, we simply return false.</p>
+	
+	<p>The code below demonstrates this technique using java.  Compile
+	and run the application with the following commands:</p>
+	<pre><code>
+$ javac FastPowers.java
+$ java FastPowers <number>
+</code></pre>
+
+
 	<script
 src="https://gist.github.com/dougsko/6910d881d2c163c4ebb5.js"></script>
 
