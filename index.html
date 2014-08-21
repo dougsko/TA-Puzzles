@@ -64,7 +64,7 @@
 	and run the application with the following commands:</p>
 
 <pre><code>$ javac FastPowers.java
-$ java FastPowers \<number\>
+$ java FastPowers &gt;number&lt;
 </code></pre>
 
 
@@ -74,9 +74,16 @@ src="https://gist.github.com/dougsko/6910d881d2c163c4ebb5.js"></script>
 	<h3>Lot's of 0's</h3>
 	<blockquote>How many zeros are on the end of n! ?  Assume n is big.
 		So n! is REALLY big.</blockquote>
+	<br/>
+
+	<p>To solve this question, we will use a divide by 5^n trick.</p>
+	<script
+src="https://gist.github.com/dougsko/65dd50487feb36f902cd.js"></script>
 
 	<h3>What's Wrong With...</h3>
 	<blockquote>...this code?</blockquote>
+	<br/>
+
 <pre><code>public static String parity(String msg)
 {
 	String parityStr = null;
@@ -94,14 +101,11 @@ src="https://gist.github.com/dougsko/6910d881d2c163c4ebb5.js"></script>
 }
 </code></pre>
 
+<p>The problem with the code above is the use of the
+<code>hashCode()</code> method.
 
 
 
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
 
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
